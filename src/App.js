@@ -6,7 +6,7 @@ function App() {
 
   const increment = () => setCount(count + 1);
   const decrement = () => setCount(count - 1);
-
+  const reset = () => setCount(0);
   return (
     <div className="App">
       <header className="App-header">
@@ -15,6 +15,9 @@ function App() {
           <button onClick={decrement}>-</button>
           <span>{count}</span>
           <button onClick={increment}>+</button>
+        </div>
+        <div className='reset'>
+          <button onClick={reset}>Reset</button>
         </div>
       </header>
     </div>
